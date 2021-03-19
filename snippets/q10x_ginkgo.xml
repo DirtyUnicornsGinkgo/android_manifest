@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest> 
+
+  <!-- DU Ginkgo remote -->
+  <remote  name="du-ginkgo"
+           revision="q10x"
+           fetch="https://github.com/DirtyUnicornsGinkgo/" />
+		   
+  <!-- DU Ginkgo REPOS -->
+  
+  <!-- General -->
+  <project path="build/make" name="android_build" remote="du-ginkgo" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path="libcore" name="android_libcore" remote="du-ginkgo" />
+  <project path="device/du/sepolicy" name="android_device_du_sepolicy" remote="du-ginkgo" />
+  <project path="device/qcom/sepolicy" name="android_device_qcom_sepolicy" remote="du-ginkgo" />
+  <project path="device/qcom/sepolicy-legacy" name="android_device_qcom_sepolicy-legacy" remote="du-ginkgo" />  
+  <project path="device/qcom/sepolicy-legacy-um" name="android_device_qcom_sepolicy-legacy-um" remote="du-ginkgo" />
+  <project path="manifest" name="android_manifest" remote="du-ginkgo" />
+
+  <!-- External -->
+  <project path="external/aac" name="android_external_aac" remote="du-ginkgo" />
+  <project path="external/ant-wireless/ant_native" name="android_external_ant-wireless_ant_native" remote="du-ginkgo" />
+  <project path="external/ant-wireless/ant_service" name="android_external_ant-wireless_ant_service" remote="du-ginkgo" />
+  <project path="external/ant-wireless/antradio-library" name="android_external_ant-wireless_antradio-library" remote="du-ginkgo" />
+  <project path="external/bson" name="android_external_bson" remote="du-ginkgo" />
+  <project path="external/gptfdisk" name="android_external_gptfdisk" remote="du-ginkgo" />
+  <project path="external/libaom" name="android_external_libaom" remote="du-ginkgo" />
+  <project path="external/libavc" name="android_external_libavc" remote="du-ginkgo" />
+  <project path="external/libexif" name="android_external_libexif" remote="du-ginkgo" />
+  <project path="external/libnfc-nxp" name="android_external_libnfc-nxp" remote="du-ginkgo" />
+  <project path="external/json-c" name="android_external_json-c" remote="du-ginkgo" />
+  <project path="external/okhttp" name="android_external_okhttp" remote="du-ginkgo" />
+  <project path="external/wpa_supplicant_8" name="android_external_wpa_supplicant_8" remote="du-ginkgo" />
+  
+  <!-- Frameworks -->
+  <project path="frameworks/av" name="android_frameworks_av" remote="du-ginkgo" />
+  <project path="frameworks/base" name="android_frameworks_base" remote="du-ginkgo" />
+  <project path="frameworks/minikin" name="android_frameworks_minikin" remote="du-ginkgo" />
+  <project path="frameworks/native" name="android_frameworks_native" remote="du-ginkgo" />  
+  <project path="frameworks/opt/net/wifi" name="android_frameworks_opt_net_wifi" remote="du-ginkgo" />
+
+  <!-- Hardware -->
+  <project path="hardware/du/interfaces" name="android_hardware_du_interfaces" remote="du-ginkgo" />
+  <project path="hardware/qcom-caf/bt" name="android_hardware_qcom_bt" remote="du-ginkgo" revision="q10x-caf" />
+  <project path="hardware/qcom-caf/sm8150/audio" name="android_hardware_qcom_audio" remote="du-ginkgo" revision="q10x-caf-sm8150" />
+  <project path="hardware/qcom-caf/sm8150/display" name="android_hardware_qcom_display" remote="du-ginkgo" revision="q10x-caf-sm8150" />
+  <project path="hardware/qcom-caf/sm8150/media" name="android_hardware_qcom_media" remote="du-ginkgo" revision="q10x-caf-sm8150" />
+  <project path="hardware/qcom-caf/thermal" name="android_hardware_qcom_thermal" remote="du-ginkgo" revision="q10x-caf" />
+  
+  <!-- Packages -->
+  <project path="packages/apps/Bluetooth" name="android_packages_apps_Bluetooth" remote="du-ginkgo" />
+  <project path="packages/apps/Car/Settings" name="android_packages_apps_Car_Settings" remote="du-ginkgo" />
+  <project path="packages/apps/CellBroadcastReceiver" name="android_packages_apps_CellBroadcastReceiver" remote="du-ginkgo" />
+  <project path="packages/apps/DU-Themes" name="android_packages_apps_DU-Themes" remote="du-ginkgo" />
+  <project path="packages/apps/PermissionController" name="android_packages_apps_PackageInstaller" remote="du-ginkgo" />
+  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="du-ginkgo" />
+  <project path="packages/resources/devicesettings" name="android_packages_resources_devicesettings" remote="du-ginkgo" />
+  <project path="packages/providers/MediaProvider" name="android_packages_providers_MediaProvider" remote="du-ginkgo" />
+  <project path="packages/services/Telecomm" name="android_packages_services_Telecomm" remote="du-ginkgo" />
+  
+  <!-- System -->
+  <project path="system/bt" name="android_system_bt" remote="du-ginkgo" />
+  <project path="system/core" name="android_system_core" remote="du-ginkgo" />
+  <project path="system/netd" name="android_system_netd" remote="du-ginkgo" />
+  <project path="system/nfc" name="android_system_nfc" remote="du-ginkgo" />
+  <project path="system/qcom" name="android_system_qcom" remote="du-ginkgo" />
+  <project path="system/security" name="android_system_security" remote="du-ginkgo" />
+  <project path="system/tools/dtbtool" name="android_system_tools_dtbtool" remote="du-ginkgo" />
+  
+  <!-- Vendor -->
+  <project path="vendor/du" name="android_vendor_du" remote="du-ginkgo" >
+    <linkfile src="scripts/merge-aosp.sh" dest="merge-aosp.sh" />
+  </project>
+  <project path="vendor/extras" name="android_vendor_extras" remote="du-ginkgo" />
+  <project path="vendor/codeaurora/telephony" name="android_vendor_codeaurora_telephony" remote="du-ginkgo" />
+  <project path="vendor/nxp/opensource/interfaces/nfc" name="android_vendor_nxp_interfaces_opensource_nfc" remote="du-ginkgo" />
+  <project path="vendor/nxp/opensource/commonsys/external/libnfc-nci" name="android_vendor_nxp_opensource_external_libnfc-nci" remote="du-ginkgo" />
+  <project path="vendor/nxp/opensource/commonsys/frameworks" name="android_vendor_nxp_opensource_frameworks" remote="du-ginkgo" />
+  <project path="vendor/nxp/opensource/commonsys/packages/apps/Nfc" name="android_vendor_nxp_opensource_packages_apps_Nfc" remote="du-ginkgo" />
+  <project path="vendor/nxp/opensource/pn5xx/halimpl" name="android_vendor_nxp_opensource_halimpl" remote="du-ginkgo" revision="q10x-pn5xx" />
+  <project path="vendor/nxp/opensource/pn5xx/hidlimpl" name="android_vendor_nxp_opensource_hidlimpl" remote="du-ginkgo" revision="q10x-pn5xx" />
+  <project path="vendor/nxp/opensource/sn100x/halimpl" name="android_vendor_nxp_opensource_halimpl" remote="du-ginkgo" revision="q10x-sn100x" />
+  <project path="vendor/nxp/opensource/sn100x/hidlimpl" name="android_vendor_nxp_opensource_hidlimpl" remote="du-ginkgo" revision="q10x-sn100x" />
+  <project path="vendor/qcom/opensource/audio" name="android_vendor_qcom_opensource_audio" remote="du-ginkgo" />
+  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="android_vendor_qcom_opensource_data-ipa-cfg-mgr" remote="du-ginkgo" />
+  <project path="vendor/qcom/opensource/dataservices" name="android_vendor_qcom_opensource_dataservices" remote="du-ginkgo" />
+  <project path="vendor/qcom/opensource/fm-commonsys" name="android_vendor_qcom_opensource_fm-commonsys" remote="du-ginkgo" />
+  <project path="vendor/qcom/opensource/interfaces" name="android_vendor_qcom_opensource_interfaces" remote="du-ginkgo" />
+  <project path="vendor/qcom/opensource/libfmjni" name="android_vendor_qcom_opensource_libfmjni" remote="du-ginkgo" />
+  <project path="vendor/qcom/opensource/power" name="android_vendor_qcom_opensource_power" remote="du-ginkgo" />
+  <project path="vendor/qcom/opensource/thermal-engine" name="android_vendor_qcom_opensource_thermal-engine" remote="du-ginkgo" />
+  <project path="vendor/themes" name="android_vendor_themes" remote="du-ginkgo" />
+
+</manifest>

@@ -799,9 +799,12 @@
   <repo-hooks in-project="platform/tools/repohooks" enabled-list="pre-upload" />
 
   <!-- Remove unused AOSP repos -->
-  <include name="remove.xml" />
+  <include name="snippets/obsolete.xml" />
 
   <!-- Add all tracked DU/AOSP repos -->
-  <include name="q10x_default.xml" />
+  <include name="snippets/q10x_default.xml" />
+
+  <!-- Add all tracked DU Ginkgo/AOSP repos -->
+  <include name="snippets/q10x_ginkgo.xml" />
 
 </manifest>
