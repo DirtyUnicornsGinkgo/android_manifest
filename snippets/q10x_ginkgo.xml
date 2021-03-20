@@ -74,6 +74,9 @@
   <project path="system/qcom" name="android_system_qcom" remote="du-ginkgo" />
   <project path="system/security" name="android_system_security" remote="du-ginkgo" />
   <project path="system/tools/dtbtool" name="android_system_tools_dtbtool" remote="du-ginkgo" />
+
+  <!-- Tools -->
+  <project path="tools/extract-utils" name="android_tools_extract-utils" remote="du-ginkgo" />
   
   <!-- Vendor -->
   <project path="vendor/du" name="android_vendor_du" remote="du-ginkgo" >
