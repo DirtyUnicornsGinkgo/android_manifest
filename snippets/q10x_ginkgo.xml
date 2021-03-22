@@ -67,7 +67,10 @@
   <project path="packages/resources/devicesettings" name="android_packages_resources_devicesettings" remote="du-ginkgo" />
   <project path="packages/providers/MediaProvider" name="android_packages_providers_MediaProvider" remote="du-ginkgo" />
   <project path="packages/services/Telecomm" name="android_packages_services_Telecomm" remote="du-ginkgo" />
-  
+
+  <!-- PixelGapps -->
+  <project path="vendor/pixelgapps" name="andrraa/android_vendor_pixelgapps" remote="gitlab" revision="q10x" clone-depth="1" />
+
   <!-- System -->
   <project path="system/bt" name="android_system_bt" remote="du-ginkgo" />
   <project path="system/connectivity/wificond" name="android_system_connectivity_wificond" remote="du-ginkgo" />
