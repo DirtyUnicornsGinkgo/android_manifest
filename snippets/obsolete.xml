@@ -60,6 +60,7 @@
   <!-- External -->
   <remove-project name="platform/external/aac" />
   <remove-project name="platform/external/e2fsprogs" />
+  <remove-project name="platform/external/dnsmasq" />
   <remove-project name="platform/external/gptfdisk" />
   <remove-project name="platform/external/libaom" />
   <remove-project name="platform/external/libavc" />
@@ -67,6 +68,7 @@
   <remove-project name="platform/external/okhttp" />
   <remove-project name="platform/external/selinux" />
   <remove-project name="platform/external/tinycompress" />
+  <remove-project name="platform/external/v8" />
   <remove-project name="platform/external/wpa_supplicant_8" />
 
   <!-- General -->
@@ -150,11 +152,13 @@
 
   <!-- System -->
   <remove-project name="platform/system/bt" />
+  <remove-project name="platform/system/connectivity/wificond" />
   <remove-project name="platform/system/core" />
   <remove-project name="platform/system/netd" />
   <remove-project name="platform/system/nfc" />
   <remove-project name="platform/system/security" />
   <remove-project name="platform/system/sepolicy" />
+  <remove-project name="platform/system/tools/hidl" />
   <remove-project name="platform/system/update_engine" />
   <remove-project name="platform/system/vold" />
 

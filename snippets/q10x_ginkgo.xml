@@ -31,6 +31,7 @@
   <project path="external/ant-wireless/ant_service" name="android_external_ant-wireless_ant_service" remote="du-ginkgo" />
   <project path="external/ant-wireless/antradio-library" name="android_external_ant-wireless_antradio-library" remote="du-ginkgo" />
   <project path="external/bson" name="android_external_bson" remote="du-ginkgo" />
+  <project path="external/dnsmasq" name="android_external_dnsmasq" remote="du-ginkgo" />
   <project path="external/gptfdisk" name="android_external_gptfdisk" remote="du-ginkgo" />
   <project path="external/libaom" name="android_external_libaom" remote="du-ginkgo" />
   <project path="external/libavc" name="android_external_libavc" remote="du-ginkgo" />
@@ -38,6 +39,7 @@
   <project path="external/libnfc-nxp" name="android_external_libnfc-nxp" remote="du-ginkgo" />
   <project path="external/json-c" name="android_external_json-c" remote="du-ginkgo" />
   <project path="external/okhttp" name="android_external_okhttp" remote="du-ginkgo" />
+  <project path="external/v8" name="android_external_v8" remote="du-ginkgo" />
   <project path="external/wpa_supplicant_8" name="android_external_wpa_supplicant_8" remote="du-ginkgo" />
   
   <!-- Frameworks -->
@@ -68,12 +70,14 @@
   
   <!-- System -->
   <project path="system/bt" name="android_system_bt" remote="du-ginkgo" />
+  <project path="system/connectivity/wificond" name="android_system_connectivity_wificond" remote="du-ginkgo" />
   <project path="system/core" name="android_system_core" remote="du-ginkgo" />
   <project path="system/netd" name="android_system_netd" remote="du-ginkgo" />
   <project path="system/nfc" name="android_system_nfc" remote="du-ginkgo" />
   <project path="system/qcom" name="android_system_qcom" remote="du-ginkgo" />
   <project path="system/security" name="android_system_security" remote="du-ginkgo" />
   <project path="system/tools/dtbtool" name="android_system_tools_dtbtool" remote="du-ginkgo" />
+  <project path="system/tools/hidl" name="android_system_tools_hidl" remote="du-ginkgo" />
 
   <!-- Tools -->
   <project path="tools/extract-utils" name="android_tools_extract-utils" remote="du-ginkgo" />
